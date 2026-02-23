@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Again learning Css selectors </title>
+    <style>
+        /*element selectors*/
+
+        div {
+            color: aliceblue;
+            background-color: rgb(0, 255, 21);
+
+        }
+
+        /*Class Selectors*/
+        .ninja {
+            color: darkorange;
+            background-color: black;
+        }
+
+        /*ID selectors*/
+        #im {
+            background-color: red;
+            color: black;
+        }
+
+        /*child selectors */
+        article>p {
+            color: pink;
+            background-color: yellow;
+        }
+
+        /*Descendent selectors*/
+        span p {
+            color: cadetblue;
+            background-color: coral;
+        }
+
+        /* Universal selector*/
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        /*pseudo selectors*/
+
+        a:link {
+            color: chartreuse;
+        }
+
+        a:active {
+            background-color: darkmagenta;
+        }
+
+        /*hover using and its an wonderfully and personally i Like it*/
+        div:hover {
+            background-color: blue;
+        }
+
+        a:hover {
+            color: blue;
+            background-color: brown;
+        }
+
+        h3:first-child {
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* element selectors */ -->
+    <div>
+        prajwal im and this is an element selectors
+    </div>
+    <!-- /* Class Selectors */ -->
+
+    <div class="ninja">
+        im also prajwal but im an class selectors
+    </div>
+    <!-- /* ID selectors */ -->
+    <div id="im">
+        im also be an prajwal but im df and im an id selectors
+    </div>
+    <!-- /*child selectors */ -->
+    <article>
+        <p>Hey Bro it is an I do child selectors</p>
+    </article>
+    <!-- /* Descendent selectors  -->
+    <span>
+        <p>Hey This is an Descendent selector </p>
+    </span>
+    <!-- pseudo selectors -->
+    <a href="https://www.google.com">Go to Google</a>
+    <nav>
+        <h3>
+            hello
+        </h3>
+        <h3>
+            hoioi
+
+        </h3>
+        <h3>
+            gods plan
+        </h3>
+    </nav>
+</body>
+
+</html>
