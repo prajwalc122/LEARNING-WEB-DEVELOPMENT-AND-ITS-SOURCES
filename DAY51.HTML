@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RCB Squad 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+        }
+
+        .title {
+            margin: 25px 0;
+            font-size: 40px;
+            color: #ff1e1e;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: rgba(0, 0, 0, 0.9);
+            overflow: hidden;
+            transition: 0.5s ease;
+            padding: 20px;
+        }
+
+        .card.active .overlay {
+            height: 100%;
+        }
+
+        .overlay h2 {
+            margin-bottom: 10px;
+        }
+
+        .overlay p {
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">RCB Squad 2026</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="/DAY/Virat Kholi.jpg" onclick="toggleCard(this)">
+            <div class="overlay">
+                <h2>Virat Kohli</h2>
+                <p>Batsman | India</p>
+                <p>Legendary player known for consistency and aggressive batting.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/DAY/download.jpg" onclick="toggleCard(this)">
+            <div class="overlay">
+                <h2>Devdutt Padikkal</h2>
+                <p>Batsman | India</p>
+                <p>Stylish batsman And most successful IPL performances in previous season and Now.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/DAY/Tim David.jpg" onclick="toggleCard(this)">
+            <div class="overlay">
+                <h2>Tim David</h2>
+                <p>Finisher | Australia</p>
+                <p>Explosive hitter known for finishing matches.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleCard(img) {
+            let allCards = document.querySelectorAll(".card");
+
+            // Remove active from all cards
+            allCards.forEach(card => card.classList.remove("active"));
+
+            // Add active only to clicked one
+            let clickedCard = img.parentElement;
+            clickedCard.classList.add("active");
+        }
+    </script>
+
+</body>
+
+</html>
