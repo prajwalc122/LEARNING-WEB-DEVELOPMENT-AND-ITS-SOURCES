@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KAPMI College</title>
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    transition:0.5s;
+}
+
+/* Header */
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:50px;
+    background:#dbe9ff;
+}
+
+.hero h2{
+    margin-bottom:10px;
+}
+
+/* Button */
+button{
+    padding:10px 20px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* Courses */
+.course-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.course{
+    width:250px;
+    background:#eef4ff;
+    padding:20px;
+    margin:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* Contact Form */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:#222;
+    color:white;
+}
+
+.dark-mode section{
+    background:#333;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>KAPMI College</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Dark Mode Button -->
+    <button onclick="toggleDarkMode()">
+        Dark Mode
+    </button>
+</header>
+
+<!-- Hero Section -->
+<div class="hero" id="home">
+
+    <h2>Welcome to KAPMI College</h2>
+
+    <p>
+        Building Future Professionals Through Quality Education
+    </p>
+
+</div>
+
+<!-- About -->
+<section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        KAPMI College offers quality education,
+        modern learning methods and career-oriented programs.
+    </p>
+
+</section>
+
+<!-- Courses -->
+<section id="courses">
+
+    <h2>Courses Offered</h2>
+
+    <div class="course-container">
+
+        <div class="course">
+            <h3>BCA</h3>
+            <p>Bachelor of Computer Applications</p>
+        </div>
+
+        <div class="course">
+            <h3>BCom</h3>
+            <p>Bachelor of Commerce</p>
+        </div>
+
+        <div class="course">
+            <h3>BBA</h3>
+            <p>Bachelor of Business Administration</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <textarea id="message"
+    placeholder="Enter Message"></textarea>
+
+    <button onclick="validateForm()">
+        Submit
+    </button>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 KAPMI College. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+
+/* Form Validation */
+
+function validateForm(){
+
+    let name =
+    document.getElementById("name").value;
+
+    let email =
+    document.getElementById("email").value;
+
+    if(name === "" || email === ""){
+
+        alert("Please fill all fields");
+
+    }else{
+
+        alert("Form Submitted Successfully");
+
+    }
+}
+
+/* Dark Mode */
+
+function toggleDarkMode(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+</script>
+
+</body>
+</html>
