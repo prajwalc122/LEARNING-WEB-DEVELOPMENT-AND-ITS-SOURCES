@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="showMessage()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function showMessage() {
+    let studentName = document.getElementById("name").value;
+
+    document.getElementById("result").innerHTML =
+        "Welcome, " + studentName + "! Your registration is successful.";
+}
+</script>
+
+</body>
+</html>
