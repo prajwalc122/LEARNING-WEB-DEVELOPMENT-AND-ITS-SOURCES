@@ -2,286 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Complete HTML Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another one</title>
 </head>
 <body>
-
-    <h1>Student Registration Form</h1>
-
-    <form action="#" method="post">
-
+    <!-- Professional Student Registration Form using HTML -->
+     <!DOCTYPE html>
+<html>
+  <head>
+    <title>World</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Prajwal c</h1>
+      <form action="
+      " method="get" accept-charset="utf-8">
         <fieldset>
-            <legend>Personal Information</legend>
-
-            <!-- Text -->
-            <label for="name">Full Name:</label><br>
-            <input
-                type="text"
-                id="name"
-                name="fullname"
-                placeholder="Enter your full name"
-                required
-                autofocus>
-            <br><br>
-
-            <!-- Email -->
-            <label for="email">Email:</label><br>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@gmail.com"
-                required>
-            <br><br>
-
-            <!-- Password -->
-            <label for="password">Password:</label><br>
-            <input
-                type="password"
-                id="password"
-                name="password"
-                minlength="8"
-                required>
-            <br><br>
-
-            <!-- Phone -->
-            <label for="phone">Phone Number:</label><br>
-            <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="9876543210"
-                pattern="[0-9]{10}"
-                required>
-            <br><br>
-
-            <!-- Number -->
-            <label for="age">Age:</label><br>
-            <input
-                type="number"
-                id="age"
-                name="age"
-                min="18"
-                max="60">
-            <br><br>
-
-            <!-- Date -->
-            <label>Date of Birth:</label><br>
-            <input type="date">
-            <br><br>
-
-            <!-- Time -->
-            <label>Preferred Time:</label><br>
-            <input type="time">
-            <br><br>
-
-            <!-- Month -->
-            <label>Admission Month:</label><br>
-            <input type="month">
-            <br><br>
-
-            <!-- Week -->
-            <label>Preferred Week:</label><br>
-            <input type="week">
-            <br><br>
-
-            <!-- Color -->
-            <label>Favorite Color:</label><br>
-            <input type="color">
-            <br><br>
-
+          <legend>Personal Details</legend>
+          <label for="id">Enter Your E-mail:</label>
+          <input type="email" name="id" id="id" placeholder="Enter your E-mail" />
+          <br />
+          <br />
+          <label for="id1">Enter your Password:</label>
+          <input type="password" name="id2" id="id2" placeholder="Enter Password"/>
+          <br />
+          <br />
+          <label >Gender:</label>
+          
+          <label id="id3">Male</label>
+          <input type="radio" name="id3" />
+            
+          <label id="id4">Female</label>
+          <input type="radio" name="id4" />
+          <br />
+          <br />
+          <label for="id5">Do u apply for Jobs:</label>
+          <input type="checkbox" name="id5" id="id5" />
+          <br />
+          <br />
+          <label for="id7">Degree Obtained:</label>
+          <select name="id7" id="id7">
+            <option value="MSC">MSC</option>
+            <option value="BCA">BCA</option>
+            <option value="MBA">MBA</option>
+            <option value="BSC">BSC</option>
+            
+          </select>
+          <br />
+          <br />
+          <label for="id8">Upload Documents:</label>
+          <input type="file" name="id8" id="id8" placeholder="Add Document" />
+          <br />
+          <br />
+          <label for="id6">Submit:</label>
+          <input type="submit" name="id3" id="id3" value="Click Here" />
         </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>Gender</legend>
-
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-
-            <input type="radio" id="other" name="gender" value="Other">
-            <label for="other">Other</label>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>Skills</legend>
-
-            <input type="checkbox" id="html">
-            <label for="html">HTML</label>
-
-            <input type="checkbox" id="css">
-            <label for="css">CSS</label>
-
-            <input type="checkbox" id="js">
-            <label for="js">JavaScript</label>
-
-            <input type="checkbox" id="react">
-            <label for="react">React</label>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>Country</legend>
-
-            <label>Select Country</label><br>
-
-            <select>
-
-                <option>India</option>
-                <option>USA</option>
-                <option>Canada</option>
-                <option>Japan</option>
-
-            </select>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>City Suggestions</legend>
-
-            <input list="cities" placeholder="Choose your city">
-
-            <datalist id="cities">
-
-                <option value="Bengaluru">
-                <option value="Mysuru">
-                <option value="Shivamogga">
-                <option value="Mangaluru">
-                <option value="Hubballi">
-
-            </datalist>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Address</legend>
-
-            <textarea
-                rows="5"
-                cols="40"
-                placeholder="Enter your address"></textarea>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Upload Resume</legend>
-
-            <input
-                type="file"
-                accept=".pdf,.doc,.docx">
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Experience Level</legend>
-
-            Beginner
-            <input
-                type="range"
-                min="0"
-                max="100"
-                value="30">
-            Expert
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Website</legend>
-
-            <input
-                type="url"
-                placeholder="https://example.com">
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Search Course</legend>
-
-            <input
-                type="search"
-                placeholder="Search...">
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Progress</legend>
-
-            Course Progress
-
-            <progress
-                value="70"
-                max="100"></progress>
-
-            <br><br>
-
-            Skill Level
-
-            <meter
-                min="0"
-                max="100"
-                value="80"></meter>
-
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-
-            <legend>Hidden Field</legend>
-
-            <input
-                type="hidden"
-                value="StudentID123">
-
-            Hidden field is not visible.
-
-        </fieldset>
-
-        <br>
-
-        <input
-            type="submit"
-            value="Register">
-
-        <input
-            type="reset"
-            value="Clear">
-
-        <input
-            type="button"
-            value="Click Me">
-
-    </form>
-
+      </form>
+
+      <script>
+        alert("Hello WOrld Wellcome Back.......")
+      </script>
+  </body>
+</html>
 </body>
 </html>
